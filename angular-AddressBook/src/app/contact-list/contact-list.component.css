@@ -1,22 +1,21 @@
 /* Contact List CSS styles */
 
+
 h2{
     text-align: center;
 }
 
 div#addContact input{
-    width: 100%;
+    width: 40%;
     background-color: #ddd;
+    display: block;
 }
-
-
-  
 
 .contacts {
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
-    width: auto;
+    width: 40%;
   }
   .contacts li {
     position: relative;
@@ -26,7 +25,7 @@ div#addContact input{
     padding: .3em 0;
     height: 1.6em;
     border-radius: 4px;
-    display: inline-block;
+    display: block;
   }
   
   .contacts li:hover {

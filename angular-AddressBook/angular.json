@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-AddressBook"
+    }
+  },
+  "defaultProject": "angular-AddressBook",
+  "cli": {
+    "analytics": false
+  }
 }

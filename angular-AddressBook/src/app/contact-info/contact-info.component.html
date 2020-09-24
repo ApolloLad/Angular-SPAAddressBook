@@ -1,0 +1,26 @@
+<div *ngIf="contact">
+
+    <h2>{{contact.Name | uppercase}} Information</h2>
+    <div><span>id: </span>{{contact.id}}</div>
+    <div>
+      <label>Name:
+        <input [(ngModel)]="hero.name" placeholder="name"/>
+      </label>
+    </div>
+    <div>
+        <label>Address:
+          <input [(ngModel)]="contact.Address" placeholder="Address"/>
+        </label>
+    </div>
+    <div>
+        <label>Email:
+          <input [(ngModel)]="contact.Email" placeholder="name@email.com"/>
+        </label>
+    </div>
+    <div>
+        <label>Phone:
+          <input [(ngModel)]="contact.Phone" placeholder="###-###-####"/>
+        </label>
+    </div>
+  
+  </div>

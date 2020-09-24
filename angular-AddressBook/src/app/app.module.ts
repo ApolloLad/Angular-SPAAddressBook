@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ContactListComponent } from './contact-list/contact-list.component';
+import { ContactInfoComponent } from './contact-info/contact-info.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContactListComponent,
+    ContactInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -15,4 +19,6 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}

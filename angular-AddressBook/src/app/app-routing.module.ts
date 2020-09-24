@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { ContactListComponent } from './contact-list/contact-list.component';
+import { ContactInfoComponent } from './contact-info/contact-info.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'contact-list', component: ContactListComponent },
+  { path: 'info/:id', component: ContactInfoComponent },
+  { path: '', redirectTo: '/contact-list', pathMatch: 'full'}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

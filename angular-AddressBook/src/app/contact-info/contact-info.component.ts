@@ -19,6 +19,25 @@ export class ContactInfoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.getContact();
+  }
+
+  //gets contact based on passed in Id
+  getContact(): void{
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.contactService.getContact(id)
+    .subscribe(contact => this.contact = contact);
+  }
+
+  //returns to previous page
+  goBack(): void{
+    this.location.back();
+  }
+
+  //saves changes to contact and returns to previous page
+  save(): void {
+    this.contactService.updateContact(this.contact)
+      .subscribe(() => this.goBack());
   }
 
 }
